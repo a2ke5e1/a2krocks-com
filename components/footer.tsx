@@ -14,7 +14,7 @@ const Footer: NextPage = () => {
 
     return (
         <div>
-            <Divider light />
+            <Divider  />
             <Grid container direction="column" justifyContent="space-between" alignItems="center" sx={{
                 pt: 2
             }} >
