@@ -11,6 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import Image from 'next/image';
+import styles from '../styles/ResponsiveAppBar.module.css';
+
 const pages = ['Home', 'Work', 'About'];
 
 const ResponsiveAppBar = () => {
@@ -35,7 +38,8 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            a2krocks
+            <Image className={styles.rounded_logo} src="/images/logo.jpg" alt="a2krocks' logo" width={30} height={30} />
+            <Box sx={{ pl : 1 }} >a2krocks</Box>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -80,7 +84,8 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            a2krocks
+            <Image className={styles.rounded_logo} src="/images/logo.jpg" alt="a2kroks' logo" width={30} height={30} />
+            <Box sx={{ pl : 1 }} >a2krocks</Box>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
