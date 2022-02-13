@@ -19,19 +19,19 @@ const Footer: NextPage = () => {
                 pt: 2
             }} >
             <Grid item>
-              <IconButton className={styles.icon_button} href={mailURL} aria-label="Email">
+              <IconButton color="inherit" href={mailURL} aria-label="Email">
                   <MailOutline />
               </IconButton>
-              <IconButton className={styles.icon_button} href={githubURL} aria-label="Email">
+              <IconButton color="inherit" href={githubURL} aria-label="Email">
                   <GitHub />
               </IconButton>
-              <IconButton className={styles.icon_button} href={linkedinURL} aria-label="LinkedIn">
+              <IconButton color="inherit" href={linkedinURL} aria-label="LinkedIn">
                 <LinkedIn />
               </IconButton>
-              <IconButton className={styles.icon_button} href={twitterURL} aria-label="Twitter">
+              <IconButton color="inherit" href={twitterURL} aria-label="Twitter">
                 <Twitter />
               </IconButton>
-              <IconButton className={styles.icon_button} href={youtubeURL} aria-label="Youtube">
+              <IconButton color="inherit" href={youtubeURL} aria-label="Youtube">
                 <YouTube />
               </IconButton>
             </Grid>
