@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import styles from '../styles/footer.module.css'
 
 import { Grid, Container, Divider, Typography, IconButton } from '@mui/material'
 import { LinkedIn, Twitter, YouTube, MailOutline, GitHub } from '@mui/icons-material'
@@ -14,28 +15,30 @@ const Footer: NextPage = () => {
     return (
         <div>
             <Divider light />
-            <Grid container spacing={3}>
-            <Grid item >
-              <Typography variant="subtitle2" component="h2" sx={{ flexGrow: 1 }}>
-                &copy;2022. All Rights Reserved to Apurv Ajay Kumar.
-              </Typography>
-            </Grid>
+            <Grid container direction="column" justifyContent="space-between" alignItems="center" sx={{
+                pt: 2
+            }} >
             <Grid item>
-              <IconButton href={mailURL} aria-label="Email">
+              <IconButton className={styles.icon_button} href={mailURL} aria-label="Email">
                   <MailOutline />
               </IconButton>
-              <IconButton href={githubURL} aria-label="Email">
+              <IconButton className={styles.icon_button} href={githubURL} aria-label="Email">
                   <GitHub />
               </IconButton>
-              <IconButton  href={linkedinURL} aria-label="LinkedIn">
+              <IconButton className={styles.icon_button} href={linkedinURL} aria-label="LinkedIn">
                 <LinkedIn />
               </IconButton>
-              <IconButton  href={twitterURL} aria-label="Twitter">
+              <IconButton className={styles.icon_button} href={twitterURL} aria-label="Twitter">
                 <Twitter />
               </IconButton>
-              <IconButton  href={youtubeURL} aria-label="Youtube">
+              <IconButton className={styles.icon_button} href={youtubeURL} aria-label="Youtube">
                 <YouTube />
               </IconButton>
+            </Grid>
+            <Grid item >
+              <Typography textAlign="center" >
+                &copy;2022. All Rights Reserved to Apurv Ajay Kumar.
+              </Typography>
             </Grid>
           </Grid>
         </div>
