@@ -9,7 +9,7 @@ const Footer: NextPage = () => {
     const linkedinURL = "https://www.linkedin.com/in/a2krocks/"
     const twitterURL = "https://twitter.com/a2krocks"
     const youtubeURL = "https://www.youtube.com/channel/UCvPYsqZOD55Ri--1votZnaA"
-    const mailURL = "mailto:aakapurv@gmail.com"
+    const mailURL = "mailto:me@a2krocks.com"
     const githubURL = "https://www.github.com/a2krocks"
 
     return (
