@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 
 import { Typography, Grid, Box, Card, Stack, Container, Button, ButtonGroup } from '@mui/material'
 import { Mail, LinkedIn } from '@mui/icons-material'
@@ -22,7 +23,7 @@ const About: NextPage = () => {
                         mb: 2
                     }} columnSpacing={2}  >
                         <Grid item >
-                            <img src="/images/logo.jpg" className="img-photo" />
+                            <Image src="/images/logo.jpg" alt="My Logo" />
                         </Grid>
                         <Grid item xs >
                             <Container>

@@ -80,7 +80,7 @@ const ResponsiveAppBar = () => {
               >
                 {
                   Object.keys(pages_with_links).map((page, index) => (
-                    <Link key={page} href={pages_with_links[page]}>
+                    <Link key={page} href={pages_with_links[page]} passHref>
                       <MenuItem onClick={handleCloseNavMenu}>
                         <Typography color="inherit" textAlign="center">{page}</Typography>
                       </MenuItem>
@@ -102,7 +102,7 @@ const ResponsiveAppBar = () => {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {
                 Object.keys(pages_with_links).map((page, index) => (
-                  <Link  key={page} href={pages_with_links[page]}>
+                  <Link  key={page} href={pages_with_links[page]} passHref>
                     <Button
                       color="inherit"
                       onClick={handleCloseNavMenu}
