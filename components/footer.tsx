@@ -4,14 +4,12 @@ import styles from '../styles/footer.module.css'
 import { Grid, Container, Divider, Typography, IconButton } from '@mui/material'
 import { LinkedIn, Twitter, YouTube, MailOutline, GitHub } from '@mui/icons-material'
 
+import SocialMediaUrls from './socialMediaUrls'
+
 const Footer: NextPage = () => {
 
-    const linkedinURL = "https://www.linkedin.com/in/a2krocks/"
-    const twitterURL = "https://twitter.com/a2krocks"
-    const youtubeURL = "https://www.youtube.com/channel/UCvPYsqZOD55Ri--1votZnaA"
-    const mailURL = "mailto:me@a2krocks.com"
-    const githubURL = "https://www.github.com/a2krocks"
-
+    const smUrls = new SocialMediaUrls()
+   
     return (
         <div>
             <Divider  />
@@ -20,19 +18,19 @@ const Footer: NextPage = () => {
                 pb: 2,
             }} >
             <Grid item>
-              <IconButton color="inherit" href={mailURL} aria-label="Email">
+              <IconButton color="inherit" href={smUrls.mail} aria-label="Email">
                   <MailOutline />
               </IconButton>
-              <IconButton color="inherit" href={githubURL} aria-label="Email">
+              <IconButton color="inherit" href={smUrls.github} aria-label="Email">
                   <GitHub />
               </IconButton>
-              <IconButton color="inherit" href={linkedinURL} aria-label="LinkedIn">
+              <IconButton color="inherit" href={smUrls.linkedin} aria-label="LinkedIn">
                 <LinkedIn />
               </IconButton>
-              <IconButton color="inherit" href={twitterURL} aria-label="Twitter">
+              <IconButton color="inherit" href={smUrls.twitter} aria-label="Twitter">
                 <Twitter />
               </IconButton>
-              <IconButton color="inherit" href={youtubeURL} aria-label="Youtube">
+              <IconButton color="inherit" href={smUrls.youtube} aria-label="Youtube">
                 <YouTube />
               </IconButton>
             </Grid>

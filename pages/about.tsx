@@ -4,10 +4,11 @@ import Head from 'next/head'
 import { Typography, Grid, Box, Card, Stack, Container, Button, ButtonGroup } from '@mui/material'
 import { Mail, LinkedIn } from '@mui/icons-material'
 
+import SocialMediaUrls from '../components/socialMediaUrls'
+
 const About: NextPage = () => {
 
-    const linkedinURL = "https://www.linkedin.com/in/a2krocks/"
-    const mailURL = "mailto:me@a2krocks.com"
+    const smUrls = new SocialMediaUrls()
 
     return (
         <div>
@@ -46,8 +47,8 @@ const About: NextPage = () => {
                                     mt: 1,
                                     mb: 5
                                 }} variant="outlined"  >
-                                    <Button startIcon={<Mail />} href={mailURL} >Email</Button>
-                                    <Button startIcon={<LinkedIn />} href={linkedinURL} >LinkedIn</Button>
+                                    <Button startIcon={<Mail />} href={smUrls.mail} >Email</Button>
+                                    <Button startIcon={<LinkedIn />} href={smUrls.linkedin} >LinkedIn</Button>
                                 </ButtonGroup>
                             </Container>
                         </Grid>
