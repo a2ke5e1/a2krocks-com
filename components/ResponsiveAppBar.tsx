@@ -16,11 +16,10 @@ import styles from '../styles/ResponsiveAppBar.module.css'
 import { Divider } from '@mui/material'
 import Link from 'next/link'
 
-const pages = ['Home', 'Work', 'About']
 const pages_with_links: { [key: string]: string } = {
-  Home: '/',
-  Work: '/',
-  About: '/about',
+  "Home" : '/',
+  "Projects": '/projects',
+  "About": '/about',
 }
 
 const ResponsiveAppBar = () => {
