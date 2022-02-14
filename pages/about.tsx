@@ -39,7 +39,7 @@ const About: NextPage = () => {
                                 </Box>
                                 <Box sx={{ mt: 3 }}>
                                     <Typography variant="caption" >
-                                        Let's get in touch
+                                        {`Let's get in touch`}
                                     </Typography>
                                 </Box>
                                 <ButtonGroup sx={{
