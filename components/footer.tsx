@@ -16,7 +16,8 @@ const Footer: NextPage = () => {
         <div>
             <Divider  />
             <Grid container direction="column" justifyContent="space-between" alignItems="center" sx={{
-                pt: 2
+                pt: 2, 
+                pb: 2,
             }} >
             <Grid item>
               <IconButton color="inherit" href={mailURL} aria-label="Email">
