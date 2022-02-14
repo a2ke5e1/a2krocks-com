@@ -6,6 +6,7 @@ import { Typography, Grid, Box, Card, Stack, Container, Button, ButtonGroup } fr
 import { Mail, LinkedIn } from '@mui/icons-material'
 
 import SocialMediaUrls from '../components/socialMediaUrls'
+import styles from '../styles/About.module.css'
 
 const About: NextPage = () => {
 
@@ -23,15 +24,15 @@ const About: NextPage = () => {
                         mb: 2
                     }} columnSpacing={2}  >
                         <Grid item >
-                            <Image src="/images/logo.jpg" alt="My Logo" />
+                            <Image className={styles.img_photo} width="500" height="550" src="/images/logo.jpg" alt="My Logo" />
                         </Grid>
                         <Grid item xs >
                             <Container>
-                                <a className="greeting-name">
+                                <Typography variant='h1' >
                                     Hello! I am Apurv!
-                                </a>
+                                </Typography>
                                 <Box sx={{ mt: 1 }}>
-                                    <Typography align="justify" component="p" color="" variant="subtitle1">
+                                    <Typography align="justify" component="p" color="inherit" variant="subtitle1">
                                         I am currently a B.Tech Student studying at Haldia Institute Of Technology. I like to work on UX and bring designs to life.
                                         I also like to develop android apps.
                                     </Typography>
