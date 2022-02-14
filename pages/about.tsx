@@ -32,9 +32,15 @@ const About: NextPage = () => {
                                     Hello! I am Apurv!
                                 </Typography>
                                 <Box sx={{ mt: 1 }}>
-                                    <Typography align="justify" component="p" color="inherit" variant="subtitle1">
-                                        I am currently a B.Tech Student studying at Haldia Institute Of Technology. I like to work on UX and bring designs to life.
-                                        I also like to develop android apps.
+                                    <Typography align="justify" component="p" color="inherit" variant="body1">
+                                        {
+                                            "I am a software engineer student at Haldia Institue of Technology. I am currently working on a project called 'Yearly Progress' which is an android application which have widgets for the progess of day, month and Year."
+                                        }
+                                    </Typography>
+                                    <Typography sx={{ mt: 2 }} align="justify" component="p" color="inherit" variant="subtitle1">
+                                        {
+                                            "I am a self taught programmer and I am currently learning Next.js and TypeScript. I am also learning kotlin and python."
+                                        }
                                     </Typography>
                                 </Box>
                                 <Box sx={{ mt: 2 }}>
