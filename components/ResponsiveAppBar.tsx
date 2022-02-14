@@ -1,21 +1,27 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import Image from 'next/image';
-import styles from '../styles/ResponsiveAppBar.module.css';
-import { Divider } from '@mui/material';
+import * as React from 'react'
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
+import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
+import Menu from '@mui/material/Menu'
+import MenuIcon from '@mui/icons-material/Menu'
+import Container from '@mui/material/Container'
+import Avatar from '@mui/material/Avatar'
+import Button from '@mui/material/Button'
+import Tooltip from '@mui/material/Tooltip'
+import MenuItem from '@mui/material/MenuItem'
+import Image from 'next/image'
+import styles from '../styles/ResponsiveAppBar.module.css'
+import { Divider } from '@mui/material'
+import Link from 'next/link'
 
-const pages = ['Home', 'Work', 'About'];
+const pages = ['Home', 'Work', 'About']
+const pages_with_links: { [key: string]: string } = {
+  Home: '/',
+  Work: '/',
+  About: '/about',
+}
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -73,11 +79,16 @@ const ResponsiveAppBar = () => {
                   display: { xs: 'block', md: 'none' },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography color="inherit" textAlign="center">{page}</Typography>
-                  </MenuItem>
-                ))}
+                {
+                  Object.keys(pages_with_links).map((page, index) => (
+                    <Link href={`/${pages_with_links[page]}`}>
+                      <MenuItem key={page} onClick={handleCloseNavMenu}>
+                        <Typography color="inherit" textAlign="center">{page}</Typography>
+                      </MenuItem>
+                    </Link>
+                  ))
+                }
+
               </Menu>
             </Box>
             <Typography
@@ -90,16 +101,20 @@ const ResponsiveAppBar = () => {
               <Box sx={{ pl: 1 }} >a2krocks</Box>
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              {pages.map((page) => (
-                <Button
-                  key={page}
-                  color="inherit"
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, display: 'block' }}
-                >
-                  {page}
-                </Button>
-              ))}
+              {
+                Object.keys(pages_with_links).map((page, index) => (
+                  <Link href={`/${pages_with_links[page]}`}>
+                    <Button
+                      key={page}
+                      color="inherit"
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, display: 'block' }}
+                    >
+                      {page}
+                    </Button>
+                  </Link>
+                ))
+              }
             </Box>
           </Toolbar>
         </Container>
