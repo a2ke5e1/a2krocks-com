@@ -4,15 +4,16 @@ import { Card, CardContent, CardMedia, CardActionArea, CardActions, Button } fro
 
 interface ProjectCardProps {
     title: string;
+    className?: string;
     description: string;
     image: string;
     link: string;
 }
 
 
-export function ProjectCard({ title, description, image, link }: ProjectCardProps) {
+export function ProjectCard({ title, className, description, image, link }: ProjectCardProps) {
     return (
-        <Card variant="outlined" sx={{ width: 360, borderRadius: 5 }}>
+        <Card className={className} variant="outlined" sx={{ width: 360, borderRadius: 5 }}>
             <CardActionArea href={link}>
                 <CardMedia
                     component="img"

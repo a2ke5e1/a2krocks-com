@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 
+import styles from '../styles/index.module.css'
+
 import { ProjectCard } from '../components/ProjectCard';
 import { Grid } from '@mui/material'
 
@@ -16,6 +18,7 @@ const Home: NextPage = () => {
     >
       <Grid item >
         <ProjectCard
+          className={styles.animated_card}
           title="Project: 0"
           description="A mobile food ordering app designed for a local restaurant."
           image='/images/project0/cover.png'
@@ -25,6 +28,7 @@ const Home: NextPage = () => {
       <Grid item >
         <ProjectCard
           title="Project: 1"
+          className={styles.animated_card}
           description="An educationl website for learning programming by finding and viewing coding tutorials."
           image='/images/project1/cover.png'
           link="/projects/1"
@@ -33,6 +37,7 @@ const Home: NextPage = () => {
       <Grid item >
         <ProjectCard
           title="Project: 2"
+          className={styles.animated_card}
           description="A tool for communities to ensure that everyone has access to necessary medicine."
           image='/images/project2/cover.png'
           link="/projects/2"
@@ -41,6 +46,7 @@ const Home: NextPage = () => {
       <Grid item >
         <ProjectCard
           title="Project: 3"
+          className={styles.animated_card}
           description="An android app which shows progress of the day, month and year."
           image='/images/project2/cover.png'
           link="/projects/3"
