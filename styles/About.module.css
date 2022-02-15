@@ -3,6 +3,6 @@
 }
 
 .greeting_name {
-    font-size: calc(2.5em + 0.5vw);
+    font-size: 2em;
     font-weight: bold;
 }
