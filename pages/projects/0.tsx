@@ -81,7 +81,7 @@ const Project0: NextPage = () => {
                                     Target Audience
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary" align="justify" >
-                                    This projects aims to target people with all age group. Especially people are busy in their lives and can't cook their own food.
+                                    {"This projects aims to target people with all age group. Especially people are busy in their lives and can't cook their own food."}
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
