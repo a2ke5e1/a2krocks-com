@@ -1,0 +1,14 @@
+.cover_page {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.iframe_margin{
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.image_wireframe {
+    border-radius: 25px;
+}
