@@ -1,3 +1,8 @@
 .img_photo {
     border-radius: 10%;
 }
+
+.greeting_name {
+    font-size: calc(2.5em + 0.5vw);
+    font-weight: bold;
+}
