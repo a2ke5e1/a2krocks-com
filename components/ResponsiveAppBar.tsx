@@ -18,7 +18,7 @@ import Link from 'next/link'
 
 const pages_with_links: { [key: string]: string } = {
   "Home" : '/',
-  "Projects": '/projects',
+  "Projects": '/',
   "About": '/about',
 }
 
