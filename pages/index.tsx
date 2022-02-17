@@ -48,7 +48,7 @@ const Home: NextPage = () => {
           title="Project: 3"
           className={styles.animated_card}
           description="An android app which shows progress of the day, month and year."
-          image='/images/project2/cover.png'
+          image='/images/project3/cover.png'
           link="/projects/3"
         />
       </Grid>
