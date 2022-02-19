@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <Grid item >
           <ProjectCard
             className={styles.animated_card}
-            title="Project: 0"
+            title="Foody"
             description="A mobile food ordering app designed for a local restaurant."
             image='/images/project0/cover.png'
             link="/projects/0"
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         </Grid>
         <Grid item >
           <ProjectCard
-            title="Project: 1"
+            title="Logo"
             className={styles.animated_card}
             description="An educationl website for learning programming by finding and viewing coding tutorials."
             image='/images/project1/cover.png'
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         </Grid>
         <Grid item >
           <ProjectCard
-            title="Project: 2"
+            title="Medk"
             className={styles.animated_card}
             description="A tool for communities to ensure that everyone has access to necessary medicine."
             image='/images/project2/cover.png'
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
         </Grid>
         <Grid item >
           <ProjectCard
-            title="Project: 3"
+            title="Yearly Progress"
             className={styles.animated_card}
             description="An android app which shows progress of the day, month and year."
             image='/images/project3/cover.png'

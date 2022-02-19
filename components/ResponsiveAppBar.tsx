@@ -35,7 +35,7 @@ const ResponsiveAppBar = () => {
 
   return (
     <div>
-      <AppBar color="inherit" position="static" elevation={0}>
+      <AppBar color="inherit" position="static" className={styles.arcylic} elevation={0}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
 
