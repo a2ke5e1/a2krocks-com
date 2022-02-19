@@ -1,5 +1,20 @@
-.animated_card {
-    animation: fadein 2s;
+
+@media (prefers-color-scheme: dark) {
+    .animated_card {
+        animation: fadein 2s;
+        background: rgba(0,0,0,0.5);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .animated_card {
+        animation: fadein 2s;
+        background: rgba(255, 255, 255, 0.7);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
 }
 
 @keyframes fadein{
