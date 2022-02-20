@@ -12,7 +12,7 @@ import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
 import Image from 'next/image'
-import styles from '../styles/ResponsiveAppBar.module.css'
+import styles from '../styles/responsive_appbar.module.css'
 import { Divider } from '@mui/material'
 import Link from 'next/link'
 
@@ -35,7 +35,7 @@ const ResponsiveAppBar = () => {
 
   return (
     <div>
-      <AppBar color="inherit" position="static" className={styles.arcylic} elevation={0}>
+      <AppBar color="inherit" position="static" className={styles.arcylic_appbar} elevation={0}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
 
