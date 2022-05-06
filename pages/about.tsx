@@ -11,6 +11,7 @@ import styles from '../styles/About.module.css'
 const About: NextPage = () => {
 
     const smUrls = new SocialMediaUrls()
+    const age: number = new Date().getFullYear() - 2002;
 
     return (
         <div>
@@ -32,19 +33,21 @@ const About: NextPage = () => {
                                     <Typography sx={{
                                         pt: 5
                                     }} className={styles.greeting_name}>
-                                        Hello! I am Apurv!
+                                        {"Yo! It's your mate! Apurv"}
                                     </Typography>
                                     <Box sx={{mt: 1}}>
                                         <Typography align="justify" component="p" color="text.secondary"
+                                                    fontStyle="italic" fontSize={16}
                                                     variant="body1">
                                             {
-                                                "I am a software engineer student at Haldia Institue of Technology. I am currently working on a project called 'Yearly Progress' which is an android application which have widgets for the progess of day, month and Year."
-                                            }
+                                                "I am a "
+                                            } {age} {"yo Student trying to find my self worth in the grand universe."}
                                         </Typography>
                                         <Typography sx={{mt: 2}} align="justify" component="p" color="text.secondary"
                                                     variant="subtitle1">
                                             {
-                                                "I am a self taught programmer and I am currently learning Next.js and TypeScript. I am also learning kotlin and python."
+                                                "I am a self taught programmer who has hands dirty in following programing languages such as C, C++, C#, Java , Javascript, Typescript, Kotlin, Flutter and Python." +
+                                                " I have experience in working with web development, android apps and automations."
                                             }
                                         </Typography>
                                     </Box>
