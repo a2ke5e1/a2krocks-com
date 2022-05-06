@@ -23,9 +23,9 @@ const About: NextPage = () => {
                         <Grid justifyContent="center" container sx={{
                             mt: 2,
                             mb: 2
-                        }} columnSpacing={2}  >
+                        }} columnSpacing={0}  >
                             <Grid item >
-                                <Image className={styles.img_photo} width="500" height="550" src="/images/logo.jpg" alt="My Logo" />
+                                <Image className={styles.img_photo} width="450" height="550" src="/images/logo.jpg" alt="My Logo" />
                             </Grid>
                             <Grid item xs >
                                 <Container className={styles.arcylic}>
