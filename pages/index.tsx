@@ -46,13 +46,13 @@ const Home: NextPage = () => {
           />
         </Grid>
         <Grid item >
-          <ProjectCard
+       {/*   <ProjectCard
             title="Yearly Progress"
             className={styles.animated_card}
             description="An android app which shows progress of the day, month and year."
             image='/images/project3/cover.png'
             link="/projects/3"
-          />
+          />*/}
         </Grid>
       </Grid>
     </Box>

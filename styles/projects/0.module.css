@@ -4,27 +4,30 @@
 }
 
 
+.aryclic {
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media (prefers-color-scheme: light) {
     .aryclic {
-        background: rgba(255, 255, 255, 0.7)!important;
-        -webkit-backdrop-filter: blur(10px)!important;
-        backdrop-filter: blur(10px)!important;
-        border-color: transparent!important;
+        background: rgba(255, 255, 255, 0.7) !important;
+        border-color: rgba(0, 0, 0, 0.57) !important;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     .aryclic {
-        background: rgba(0,0,0,0.5)!important;
-        -webkit-backdrop-filter: blur(10px)!important;
-        backdrop-filter: blur(10px)!important;
-        border-color: transparent!important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        border-color: wheat !important;
     }
 }
 
 @media (prefers-color-scheme: light) {
-    .iframe_margin{
+    .iframe_margin {
         margin-top: 20px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 20px;
@@ -35,16 +38,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .iframe_margin{
+    .iframe_margin {
         margin-top: 20px;
         border: 1px solid rgba(0, 0, 0, 0.5);
         border-radius: 20px;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0, 0, 0, 0.5);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
 }
- 
+
 
 .image_wireframe {
     border-radius: 25px;

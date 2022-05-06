@@ -1,23 +1,23 @@
+.animated_card {
+    animation: fadein 2s;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
 
 @media (prefers-color-scheme: dark) {
     .animated_card {
-        animation: fadein 2s;
-        background: rgba(0,0,0,0.5)!important;
-        -webkit-backdrop-filter: blur(10px)!important;
-        backdrop-filter: blur(10px)!important;
+        background: rgba(0, 0, 0, 0.5) !important;
     }
 }
 
 @media (prefers-color-scheme: light) {
     .animated_card {
-        animation: fadein 2s;
-        background: rgba(255, 255, 255, 0.7)!important;
-        -webkit-backdrop-filter: blur(10px)!important;
-        backdrop-filter: blur(10px)!important;
+        background: rgba(255, 255, 255, 0.7) !important;
     }
 }
 
-@keyframes fadein{
+@keyframes fadein {
     from {
         opacity: 0;
     }
