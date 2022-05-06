@@ -1,0 +1,20 @@
+
+.rounded_logo {
+    border-radius: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .arcylic_appbar {
+        background: rgba(0,0,0,0.5)!important;
+        -webkit-backdrop-filter: blur(10px)!important;
+        backdrop-filter: blur(10px)!important;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .arcylic_appbar {
+        background: rgba(255, 255, 255, 0.7)!important;
+        -webkit-backdrop-filter: blur(10px)!important;
+        backdrop-filter: blur(10px)!important;
+    }
+}

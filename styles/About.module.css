@@ -1,8 +1,28 @@
 .img_photo {
-    border-radius: 10%;
+    border-radius: 5% 0 0 5%;
+    margin-left: -100px!important;
 }
 
 .greeting_name {
-    font-size: 50px;
+    font-size: calc(1.5em + 0.5vw) !important;
     font-weight: bold;
+}
+
+.arcylic {
+    border-radius: 35px;
+    -webkit-backdrop-filter: blur(05px);
+    backdrop-filter: blur(05px);
+    min-height: 550px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .arcylic {
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .arcylic {
+        background: rgba(255, 255, 255, 0.3);
+    }
 }

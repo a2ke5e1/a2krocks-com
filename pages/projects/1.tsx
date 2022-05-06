@@ -33,7 +33,7 @@ const Project1: NextPage = () => {
                 alignItems="center" spacing={2}
             >
                 <Grid item  >
-                    <Card variant="outlined" sx={{ width: cardWidth, height: cardHeight, borderColor: '#dae2ef', borderRadius: 3 }}>
+                    <Card variant="outlined" className={styles.aryclic} sx={{ width: cardWidth, height: cardHeight, borderColor: '#dae2ef', borderRadius: 3 }}>
                         <CardActionArea >
                             {/* <CardMedia
                                 component="img"
@@ -53,7 +53,7 @@ const Project1: NextPage = () => {
                     </Card>
                 </Grid>
                 <Grid item  >
-                    <Card variant="outlined" sx={{ width: cardWidth, height: cardHeight, borderColor: '#dae2ef', borderRadius: 3 }}>
+                    <Card variant="outlined" className={styles.aryclic} sx={{ width: cardWidth, height: cardHeight, borderColor: '#dae2ef', borderRadius: 3 }}>
                         <CardActionArea >
                             {/* <CardMedia     
                                 component="img"
@@ -72,7 +72,7 @@ const Project1: NextPage = () => {
                     </Card>
                 </Grid>
                 <Grid item  >
-                    <Card variant="outlined" sx={{ width: cardWidth, height: cardHeight, borderColor: '#dae2ef', borderRadius: 3 }}>
+                    <Card variant="outlined" className={styles.aryclic} sx={{ width: cardWidth, height: cardHeight, borderColor: '#dae2ef', borderRadius: 3 }}>
                         <CardActionArea >
                             {/* <CardMedia
                                 component="img"

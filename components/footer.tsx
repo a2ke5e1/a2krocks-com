@@ -13,7 +13,7 @@ const Footer: NextPage = () => {
     return (
         <div>
             <Divider  />
-            <Grid container direction="column" justifyContent="space-between" alignItems="center" sx={{
+            <Grid container className={styles.arcylic} direction="column" justifyContent="space-between"  alignItems="center" sx={{
                 pt: 2, 
                 pb: 2,
             }} >
