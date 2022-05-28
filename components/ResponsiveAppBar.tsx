@@ -117,7 +117,6 @@ const ResponsiveAppBar = () => {
                     </Toolbar>
                 </Container>
             </AppBar>
-            <Divider/>
         </div>
     );
 };
