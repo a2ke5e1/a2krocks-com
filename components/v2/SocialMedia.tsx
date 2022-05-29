@@ -1,6 +1,6 @@
 import {Box, IconButton} from "@mui/material";
 import {FacebookOutlined, GitHub, Instagram, LinkedIn, Twitter, YouTube} from "@mui/icons-material";
-import SocialMediaUrls from "../SocialMediaUrls";
+import SocialMediaUrls from "../../Info/SocialMediaUrls";
 
 const smUrls = new SocialMediaUrls();
 const socialMedia = (

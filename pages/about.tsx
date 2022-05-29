@@ -5,7 +5,7 @@ import Image from 'next/image'
 import {Typography, Grid, Box, Card, Stack, Container, Button, ButtonGroup} from '@mui/material'
 import {Mail, LinkedIn} from '@mui/icons-material'
 
-import SocialMediaUrls from '../components/SocialMediaUrls'
+import SocialMediaUrls from '../Info/SocialMediaUrls'
 import styles from '../styles/About.module.css'
 
 const About: NextPage = () => {

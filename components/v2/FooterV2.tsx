@@ -2,8 +2,8 @@ import type {NextPage} from 'next'
 
 import {Box, Typography} from '@mui/material'
 import SocialMedia from "../v2/SocialMedia";
-import SocialMediaUrls from "../SocialMediaUrls";
-import AboutMe from "../AboutMe";
+import SocialMediaUrls from "../../Info/SocialMediaUrls";
+import AboutMe from "../../Info/AboutMe";
 import Link from "next/link";
 import styles from "../../styles/components/v2/footer.module.css"
 
