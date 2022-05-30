@@ -29,7 +29,7 @@ const SocialMediaSide = (
 
 const HostedOn = (
     <Box className={styles.hosted_on} sx={{ml: 1.5}}>
-        <Typography textAlign="left" fontWeight="bold">
+        <Typography textAlign="left" fontWeight="lighter">
             Hosted On
         </Typography>
         <Image className={styles.vercel_logo} src="/vercel.svg" width={150} height={50}/>
@@ -39,7 +39,7 @@ const HostedOn = (
 
 const BuildWith = (
     <Box className={styles.hosted_on} sx={{ml: 1.5}}>
-        <Typography textAlign="left" fontWeight="bold">
+        <Typography textAlign="left" fontWeight="lighter">
             Build With
         </Typography>
         <Image className={styles.vercel_logo} src="/nextjs.png" width={80} height={80}/>
@@ -49,7 +49,7 @@ const BuildWith = (
 const Footer: NextPage = () => {
 
     return (
-        <Box className={styles.background}>
+        <Box className={styles.background} sx={{ mt: 8 }}>
             <Grid container spacing={4}>
                 <Grid item xs={9.8}>
                     {SocialMediaSide}

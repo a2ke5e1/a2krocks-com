@@ -2,6 +2,10 @@
     .background {
         background-color: #1a1a1a;
     }
+
+    .vercel_logo {
+        filter: invert(100%);
+    }
 }
 
 @media (prefers-color-scheme: light) {

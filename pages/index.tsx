@@ -8,7 +8,7 @@ import { Box } from '@mui/system';
 
 const Home: NextPage = () => {
   return (
-    <Box minHeight="80.4vh" >
+    <Box minHeight="71vh" >
       <Grid container
         direction="row"
         justifyContent="center"
