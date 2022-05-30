@@ -10,7 +10,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import FooterV2 from "./v2/FooterV2";
 
 
-export default function Layout({ children } : any) {
+export default function Main_layout({ children } : any) {
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
     const theme = React.useMemo(

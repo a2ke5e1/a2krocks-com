@@ -22,6 +22,9 @@ export function ProjectCard({ title, className, description, image, link }: Proj
                     alt="green iguana"
                 />
                 <CardContent>
+                    <Typography sx={{ mb: -0.5 }} fontSize={10} color="text.secondary">
+                        UX/UI Project
+                    </Typography>
                     <Typography gutterBottom variant="h5" component="div">
                         {title}
                     </Typography>
