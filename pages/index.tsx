@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                             title="Logo"
                             type={ProjectType.UX_UI}
                             className={styles.animated_card}
-                            description="An educationl website for learning programming by finding and viewing coding tutorials."
+                            description="An educational website for learning programming by finding and viewing coding tutorials."
                             image='/images/project1/cover.png'
                             link="/projects/1"
                         />
