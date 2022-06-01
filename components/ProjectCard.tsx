@@ -1,19 +1,26 @@
 import Typography from '@mui/material/Typography';
 
-import { Card, CardContent, CardMedia, CardActionArea, CardActions, Button } from '@mui/material';
+import {Card, CardContent, CardMedia, CardActionArea, CardActions, Button} from '@mui/material';
+
+
+export enum ProjectType {
+    UX_UI = "UX/UI Design",
+    ANDROID_APP = "Android App"
+}
 
 interface ProjectCardProps {
     title: string;
     className?: string;
+    type: ProjectType;
     description: string;
     image: string;
     link: string;
 }
 
 
-export function ProjectCard({ title, className, description, image, link }: ProjectCardProps) {
+export function ProjectCard({title, className, type, description, image, link}: ProjectCardProps) {
     return (
-        <Card className={className} variant="outlined" sx={{ width: 360, borderRadius: 5 }}>
+        <Card className={className} variant="outlined" sx={{width: 360, borderRadius: 5}}>
             <CardActionArea href={link}>
                 <CardMedia
                     component="img"
@@ -22,14 +29,14 @@ export function ProjectCard({ title, className, description, image, link }: Proj
                     alt="green iguana"
                 />
                 <CardContent>
-                    <Typography sx={{ mb: -0.5 }} fontSize={10} color="text.secondary">
-                        UX/UI Project
+                    <Typography sx={{mb: -0.5}} fontSize={10} color="text.secondary">
+                        {type}
                     </Typography>
                     <Typography gutterBottom variant="h5" component="div">
                         {title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                       {description}
+                        {description}
                     </Typography>
                 </CardContent>
             </CardActionArea>
