@@ -8,7 +8,7 @@ import projectInfo from "../../Info/project_info/project3.json"
 const ProjectYearlyProgress : NextPage = () => {
 
     const cardWidth = 360
-    const cardHeight = "15vh"
+    const cardHeight = "9em"
 
     return (
         <Container>
