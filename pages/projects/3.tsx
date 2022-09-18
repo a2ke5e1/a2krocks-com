@@ -73,6 +73,13 @@ const ProjectYearlyProgress : NextPage = () => {
                 </Grid>
             </Grid>
 
+            <Typography sx={{mt: 3}} variant="h4" fontWeight="700">
+                Takeways
+            </Typography>
+            <Typography sx={{mt: 3, mb: 3}} variant="body1" fontWeight={500}  color="text.secondary">
+                While working on this project, I got to learn about kotlin and android coroutines.
+            </Typography>
+
         </Container>
     )
 }
