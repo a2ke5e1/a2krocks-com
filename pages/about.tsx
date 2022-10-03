@@ -8,6 +8,9 @@ import {Mail, LinkedIn} from '@mui/icons-material'
 import SocialMediaUrls from '../Info/SocialMediaUrls'
 import styles from '../styles/About.module.css'
 
+import ResponsiveAppBar from '../components/ResponsiveAppBar';
+import FooterV2 from '../components/v2/FooterV2';
+
 const About: NextPage = () => {
 
     const smUrls = new SocialMediaUrls()
@@ -18,6 +21,7 @@ const About: NextPage = () => {
             <Head>
                 <title>About - Apurv Ajay Kumar</title>
             </Head>
+            <ResponsiveAppBar />
             <main>
                 <Box minHeight="81vh">
                     <Container className={styles.arcylic}>
@@ -72,6 +76,7 @@ const About: NextPage = () => {
                     </Container>
                 </Box>
             </main>
+            <FooterV2 />
         </div>
     )
 }
