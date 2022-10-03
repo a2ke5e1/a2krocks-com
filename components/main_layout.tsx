@@ -7,9 +7,10 @@ import ResponsiveAppBar from '../components/ResponsiveAppBar'
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import FooterV2 from "./v2/FooterV2";
 
 
-export default function Layout({ children } : any) {
+export default function Main_layout({ children } : any) {
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
     const theme = React.useMemo(
@@ -35,7 +36,7 @@ export default function Layout({ children } : any) {
                     {children}
                 </main>
                 <footer>
-                    <Footer />
+                    <FooterV2 />
                 </footer>
             </div>
         </ThemeProvider>

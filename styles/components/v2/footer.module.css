@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: dark) {
+    .background {
+        background-color: #1a1a1a;
+    }
+
+    .vercel_logo {
+        filter: invert(100%)!important;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .background {
+        background-color: #fafafa;
+    }
+}

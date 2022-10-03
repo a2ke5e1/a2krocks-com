@@ -4,7 +4,7 @@ import styles from '../styles/footer.module.css'
 import { Grid, Container, Divider, Typography, IconButton } from '@mui/material'
 import { LinkedIn, Twitter, YouTube, MailOutline, GitHub } from '@mui/icons-material'
 
-import SocialMediaUrls from './socialMediaUrls'
+import SocialMediaUrls from '../Info/SocialMediaUrls'
 
 const Footer: NextPage = () => {
 
