@@ -27,7 +27,7 @@ const Home: NextPage = () => {
                             type={ProjectType.UX_UI}
                             description="A mobile food ordering app designed for a local restaurant."
                             image='/images/project0/cover.png'
-                            link="/projects/0"
+                            link="/projects/foody"
                         />
                     </Grid>
                     <Grid item>
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
                             className={styles.animated_card}
                             description="An educational website for learning programming by finding and viewing coding tutorials."
                             image='/images/project1/cover.png'
-                            link="/projects/1"
+                            link="/projects/logo"
                         />
                     </Grid>
                     <Grid item>
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
                             className={styles.animated_card}
                             description="A tool for communities to ensure that everyone has access to necessary medicine."
                             image='/images/project2/cover.png'
-                            link="/projects/2"
+                            link="/projects/medk"
                         />
                     </Grid>
 
