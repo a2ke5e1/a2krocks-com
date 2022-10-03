@@ -69,7 +69,7 @@ const Home: NextPage = () => {
                             className={styles.animated_card}
                             description="An android app which shows progress of the day, month and year."
                             image='/images/project3/cover.png'
-                            link="/projects/3"
+                            link="https://www.a3group.co.in/yearly-progress"
                         />
                     </Grid>
                 </Grid>
