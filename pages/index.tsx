@@ -14,6 +14,22 @@ const Home: NextPage = () => {
         <>
             <Head>
                 <title>Apurv Ajay Kumar</title>
+                <meta name="title" content="Apurv Ajay Kumar" />
+                <meta name="description" content="I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website." />
+
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.a2krocks.com/" />
+                <meta property="og:title" content="Apurv Ajay Kumar" />
+                <meta property="og:description" content="I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website." />
+                <meta property="og:image" content="/images/logo.jpg" />
+
+                
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://www.a2krocks.com/" />
+                <meta property="twitter:title" content="Apurv Ajay Kumar" />
+                <meta property="twitter:description" content="I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website." />
+                <meta property="twitter:image" content="/images/logo.jpg" />
             </Head>
             <ResponsiveAppBar />
             <main>
