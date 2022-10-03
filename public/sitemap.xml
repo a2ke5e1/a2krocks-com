@@ -5,33 +5,28 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://alpha.a2krocks.com/</loc>
-  <lastmod>2022-09-10T20:16:21+00:00</lastmod>
+  <loc>https://www.a2krocks.com/</loc>
+  <lastmod>2022-10-03T21:09:21+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://alpha.a2krocks.com/about</loc>
-  <lastmod>2022-09-10T20:16:21+00:00</lastmod>
+  <loc>https://www.a2krocks.com/about</loc>
+  <lastmod>2022-10-03T21:09:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alpha.a2krocks.com/projects/0</loc>
-  <lastmod>2022-09-10T20:16:21+00:00</lastmod>
+  <loc>https://www.a2krocks.com/projects/logo</loc>
+  <lastmod>2022-10-03T21:09:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alpha.a2krocks.com/projects/1</loc>
-  <lastmod>2022-09-10T20:16:21+00:00</lastmod>
+  <loc>https://www.a2krocks.com/projects/foody</loc>
+  <lastmod>2022-10-03T21:09:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alpha.a2krocks.com/projects/2</loc>
-  <lastmod>2022-09-10T20:16:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://alpha.a2krocks.com/projects/3</loc>
-  <lastmod>2022-09-10T20:16:21+00:00</lastmod>
+  <loc>https://www.a2krocks.com/projects/medk</loc>
+  <lastmod>2022-10-03T21:09:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 </urlset>
