@@ -11,12 +11,12 @@ const Home: NextPage = () => {
         <Box>
             <Container>
                 <Typography fontWeight="lighter" fontSize={35}>
-                    Featured Projects
+                    UI Projects
                 </Typography>
                 <Grid container alignSelf="center"
                       direction="row" spacing={2}
                       sx={{
-                          mt: 0.5,
+                          mt: 0,
                           mb: 1
                       }}
                 >
@@ -52,13 +52,13 @@ const Home: NextPage = () => {
                     </Grid>
 
                 </Grid>
-                <Typography fontWeight="lighter" fontSize={35}>
-                    Recent Projects
+                <Typography fontWeight="lighter" fontSize={35} sx={{ mt: 3 }}>
+                    Android Projects
                 </Typography>
                 <Grid container alignSelf="center"
                       direction="row" spacing={2}
                       sx={{
-                          mt: 0.5,
+                          mt: 0,
                       }}
                 >
 

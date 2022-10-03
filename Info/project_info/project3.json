@@ -1,0 +1,19 @@
+{
+  "title": "Yearly Progress",
+  "description": "Check the out the progress of the day, week, month and year.",
+  "image": "/images/project3/cover.png",
+  "cards": {
+    "my_role": {
+      "title": "My Role",
+      "desc": "Lead UX Designer, Lead Android Developer, Project Manager"
+    },
+    "project_goal": {
+      "title" : "Project Goal",
+      "desc" :  "Goal of this project is provide widgets which follows new Material You design for android 12 and shows the progress of day, week, month and year."
+    },
+    "target_audience" : {
+      "title": "Target Audience",
+      "desc": "This project tries to target people of all age group. It special tries to appeal to people who are looking for customize their home screen and track progress of a day or event."
+    }
+  }
+}
