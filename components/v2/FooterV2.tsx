@@ -15,11 +15,11 @@ const abtMe = new AboutMe();
 // Left Side of the footer where all my social media info belongs
 const SocialMediaSide = (
     <Box sx={{ pt: 5, pb : 5 }} >
-        <Typography textAlign="left" fontWeight="bold" sx={{ ml: 1.5 }}>
+        <Typography textAlign="left" fontWeight="bold" sx={{ }}>
             {abtMe.mName}
         </Typography>
         <Link href={smUrl.mail}>
-            <Typography textAlign="left" fontWeight="lighter" sx={{ ml: 1.5, mb: 2 }}>
+            <Typography textAlign="left" fontWeight="lighter" sx={{  mb: 2 }}>
                 {abtMe.mail}
             </Typography>
         </Link>
