@@ -4,7 +4,7 @@ import SocialMediaUrls from "../../Info/SocialMediaUrls";
 
 const smUrls = new SocialMediaUrls();
 const socialMedia = (
-    <Box sx={{ pb: 2}}>
+    <Box sx={{ ml: -1}}>
         <IconButton color="inherit" href={smUrls.facebook} aria-label="Email">
             <FacebookOutlined/>
         </IconButton>
