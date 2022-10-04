@@ -15,8 +15,8 @@ import {Divider} from '@mui/material'
 import Link from 'next/link'
 
 const pages_with_links: { [key: string]: string } = {
-    "Home": '/',
     "Projects": '/',
+  //  "Experience at IEEE HIT SB": '/',
     "About": '/about',
 }
 
