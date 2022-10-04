@@ -27,7 +27,22 @@ const About: NextPage = () => {
     return (
         <div>
             <Head>
-                <title>About - Apurv Ajay Kumar</title>
+                <title>About Apurv Ajay Kumar</title>
+                <meta name="title" content="About Apurv Ajay Kumar" />
+                <meta name="description" content="I am Apurv, a student at Haldia Institute of Technology pursing a B.Tech in IT" />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.a2krocks.com/about" />
+                <meta property="og:title" content="About Apurv Ajay Kumar" />
+                <meta property="og:description" content="I am Apurv, a student at Haldia Institute of Technology pursing a B.Tech in IT" />
+                <meta property="og:image" content="/imagees/logo.jpg" />
+
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://www.a2krocks.com/about" />
+                <meta property="twitter:title" content="About Apurv Ajay Kumar" />
+                <meta property="twitter:description" content="I am Apurv, a student at Haldia Institute of Technology pursing a B.Tech in IT" />
+                <meta property="twitter:image" content="/imagees/logo.jpg" />
+
             </Head>
             <ResponsiveAppBar />
             <main>
