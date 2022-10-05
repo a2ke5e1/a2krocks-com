@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 import FooterV2 from "../components/v2/FooterV2";
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Head from "next/head";
 
 
 const RenderPage: NextPage = () => {
@@ -13,19 +14,36 @@ const RenderPage: NextPage = () => {
     const isWidth900 = useMediaQuery('(max-width: 900px)');
     const isWidth400 = useMediaQuery('(max-width: 400px)');
 
-    if (!isWidth900) {
-        imageListCol = 3;
+    if (isWidth900) {
+        imageListCol = 2;
     }
 
     if (isWidth400) {
         imageListCol = 1;
     }
 
-    imageListCol = 2;
 
+    const imageUrl = artwork[Math.floor(Math.random() * artwork.length)].img
 
     return (
         <>
+            <Head>
+                <title>3D Renders - Apurv Ajay Kumar</title>
+                <meta name="title" content="3D Renders - Apurv Ajay Kumar" />
+                <meta name="description" content="List of all the 3D render artworks done by Apurv Ajay Kumar" />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.a2krocks.com/renders" />
+                <meta property="og:title" content="3D Renders - Apurv Ajay Kumar" />
+                <meta property="og:description" content="List of all the 3D render artworks done by Apurv Ajay Kumar" />
+                <meta property="og:image" content={imageUrl} />
+
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://www.a2krocks.com/renders" />
+                <meta property="twitter:title" content="3D Renders - Apurv Ajay Kumar" />
+                <meta property="twitter:description" content="List of all the 3D render artworks done by Apurv Ajay Kumar" />
+                <meta property="twitter:image" content={imageUrl} />
+            </Head>
             <ResponsiveAppBar />
             <Container maxWidth="xl">
                 <Typography variant='h3' fontWeight="lighter" component="h1" sx={{ pt: 2, pb: 0 }} >
