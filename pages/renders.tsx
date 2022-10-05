@@ -5,22 +5,25 @@ import FooterV2 from "../components/v2/FooterV2";
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 
-function imageListCol() {
+const RenderPage: NextPage = () => {
+
+    var imageListCol = 3;
+
+
     const isWidth900 = useMediaQuery('(max-width: 900px)');
     const isWidth400 = useMediaQuery('(max-width: 400px)');
 
     if (!isWidth900) {
-        return 3;
+        imageListCol = 3;
     }
 
     if (isWidth400) {
-        return 1;
+        imageListCol = 1;
     }
 
-    return 2;
-}
+    imageListCol = 2;
 
-const RenderPage: NextPage = () => {
+
     return (
         <>
             <ResponsiveAppBar />
@@ -32,7 +35,7 @@ const RenderPage: NextPage = () => {
                     These all of the images are 3D modeled and 3D rendered using blender over time.
                 </Typography>
                 <Divider />
-                <ImageList cols={imageListCol()} sx={{ pt: 2 }} >
+                <ImageList cols={imageListCol} sx={{ pt: 2 }} >
                     {artwork.map((item) => (
                         <ImageListItem key={item.img}  >
                             <img
