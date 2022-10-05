@@ -33,12 +33,12 @@ const Home: NextPage = () => {
             </Head>
             <ResponsiveAppBar />
             <main>
-                <Container className={styles.container}>
+                <Container maxWidth="xl">
                     <Typography className={styles.headings}>
                         UI Projects
                     </Typography>
                     <Divider sx={{mb : 2 }} />
-                    <Grid container alignSelf="center"
+                    <Grid container className={styles["grid-container"]}
                         direction="row" spacing={2}
                         sx={{
                             mt: 0,

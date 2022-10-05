@@ -203,6 +203,16 @@ const About: NextPage = () => {
                                     <ListItem sx={{ pl: 0, pt: 1 }}>
                                         <Box>
                                             <Typography variant='body1' fontWeight={400}   >
+                                                {"3D Design"}
+                                            </Typography>
+                                            <Typography variant='body2' fontWeight={300}   >
+                                                {"Blender."}
+                                            </Typography>
+                                        </Box>
+                                    </ListItem>
+                                    <ListItem sx={{ pl: 0, pt: 1 }}>
+                                        <Box>
+                                            <Typography variant='body1' fontWeight={400}   >
                                                 {"UX/UI Design"}
                                             </Typography>
                                             <Typography variant='body2' fontWeight={300}   >

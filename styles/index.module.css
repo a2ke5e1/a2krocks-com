@@ -9,15 +9,14 @@
     font-size: 3rem!important;
     margin-top: 15px!important;
 }
-.container {
-    width: 70%!important;
-}
+
+
 
 @media screen and ( max-width: 780px) {
-    .container {
-        width: min-content!important;
-        margin: 0 auto!important;
-        padding: 10px !important;
+   
+
+    .grid-container {
+        justify-content: center!important;
     }
 
     .headings {

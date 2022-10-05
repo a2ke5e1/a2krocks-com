@@ -16,6 +16,7 @@ import Link from 'next/link'
 
 const pages_with_links: { [key: string]: string } = {
     "Projects": '/',
+    "3D Renders" : '/renders', 
   //  "Experience at IEEE HIT SB": '/',
     "About": '/about',
 }
