@@ -10,12 +10,12 @@ class SocialMediaUrls {
 
     constructor() {
         this.facebook = 'https://www.facebook.com/a2krocks'
-        this.instagram = "https://www.instagram.com/a2krocks/"
-        this.twitter = "https://twitter.com/a2krocks"
+        this.instagram = "https://www.instagram.com/a2ke5e1/"
+        this.twitter = "https://twitter.com/a2ke5e1"
         this.youtube = "https://www.youtube.com/channel/UCvPYsqZOD55Ri--1votZnaA"
-        this.linkedin = "https://www.linkedin.com/in/a2krocks/"
-        this.mail = "mailto:me@a2krocks.com"
-        this.github = "https://www.github.com/a2krocks"
+        this.linkedin = "https://www.linkedin.com/in/a2ke5e1/"
+        this.mail = "mailto:aakapurv@gmail.com"
+        this.github = "https://www.github.com/a2ke5e1"
     }
 }
 
