@@ -46,13 +46,10 @@ const About: NextPage = () => {
             </Head>
             <ResponsiveAppBar />
             <main>
-                <Container maxWidth="xl" sx={{
-
-                }}>
-                    <Typography variant='h3' fontWeight="lighter" component="h1" sx={{ pt: 2, pb: 1 }} >
+                <Container maxWidth="xl">
+                    <Typography variant='subtitle2' component="h6" sx={{ pt: 2, pb: 1 }} >
                         About Me
                     </Typography>
-                    <Divider />
                     <Grid container spacing={2} sx={{ pt: 2, pb: 1 }}>
                         <Grid item xs={12}>
                             <Box>
@@ -74,6 +71,38 @@ const About: NextPage = () => {
                                     <ListItem sx={{ pl: 0, pt: 1 }}>
                                         <Box>
                                             <Typography variant='body1' fontWeight={400}   >
+                                                {"SDE Intern"}
+                                            </Typography>
+                                            <Typography variant='body2' fontWeight={300}   >
+                                                {"duuet.care"}
+                                            </Typography>
+                                            <Typography variant='caption' fontWeight={300} paddingTop={1}   >
+                                                {"Dec, 2023 - Jan, 2024"}
+                                            </Typography>
+                                        </Box>
+                                    </ListItem>
+                                    <ListItem sx={{ pl: 0, pt: 1 }}>
+                                        <Box>
+                                            <Typography variant='body1' fontWeight={400}   >
+                                                {"Web & App Developer"}
+                                            </Typography>
+                                            <Typography variant='body2' fontWeight={300}   >
+                                                {"The HIT Times"}
+                                            </Typography>
+                                            <Typography variant='body2' fontWeight={300}   >
+                                                {"Haldia Institute of Technology"}
+                                            </Typography>
+                                            <Typography variant='body2' fontWeight={300}   >
+                                                {"Haldia, West Bengal"}<br />{"India"}
+                                            </Typography>
+                                            <Typography variant='caption' fontWeight={300} paddingTop={1}   >
+                                                {"2021-Present"}
+                                            </Typography>
+                                        </Box>
+                                    </ListItem>
+                                    <ListItem sx={{ pl: 0, pt: 1 }}>
+                                        <Box>
+                                            <Typography variant='body1' fontWeight={400}   >
                                                 {"Graphics Designer"}
                                             </Typography>
                                             <Typography variant='body2' fontWeight={300}   >
@@ -86,7 +115,7 @@ const About: NextPage = () => {
                                                 {"Haldia, West Bengal"}<br />{"India"}
                                             </Typography>
                                             <Typography variant='caption' fontWeight={300} paddingTop={1}   >
-                                                {"2021-present"}
+                                                {"2021-2023"}
                                             </Typography>
                                         </Box>
                                     </ListItem>

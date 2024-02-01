@@ -8,7 +8,7 @@ class AboutMe {
 
     constructor() {
         this.mName = "Apurv Ajay Kumar"
-        this.mail = "me@a2krocks.com"
+        this.mail = "aakapurv@gmail.com"
         this.social_media = new SocialMediaUrls()
     }
 

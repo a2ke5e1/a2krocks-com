@@ -5,12 +5,9 @@ import SocialMediaUrls from "../../Info/SocialMediaUrls";
 const smUrls = new SocialMediaUrls();
 const socialMedia = (
     <Box sx={{ ml: -1}}>
-        <IconButton color="inherit" href={smUrls.facebook} aria-label="Email">
+        {/* <IconButton color="inherit" href={smUrls.facebook} aria-label="Email">
             <FacebookOutlined/>
-        </IconButton>
-        <IconButton color="inherit" href={smUrls.instagram} aria-label="Instagram">
-            <Instagram/>
-        </IconButton>
+        </IconButton> */}
         <IconButton color="inherit" href={smUrls.github} aria-label="Email">
             <GitHub/>
         </IconButton>
@@ -19,6 +16,9 @@ const socialMedia = (
         </IconButton>
         <IconButton color="inherit" href={smUrls.twitter} aria-label="Twitter">
             <Twitter/>
+        </IconButton>
+        <IconButton color="inherit" href={smUrls.instagram} aria-label="Instagram">
+            <Instagram/>
         </IconButton>
         <IconButton color="inherit" href={smUrls.youtube} aria-label="Youtube">
             <YouTube/>
