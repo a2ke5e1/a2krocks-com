@@ -9,28 +9,40 @@ import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import FooterV2 from '../components/v2/FooterV2';
 import Head from 'next/head';
 
+
+import { Metadata } from 'next'
+
+
+// layout.js or page.js
+
+export const metadata: Metadata = {
+    title: 'Apurv Ajay Kumar',
+    description: 'I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website.',
+    openGraph: {
+      type: 'website',
+      url: 'https://www.a2krocks.com/',
+      title: 'Apurv Ajay Kumar',
+      description: 'I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website.',
+      images: [
+        {
+          url: '/images/logo.jpg',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: 'https://www.a2krocks.com/',
+      title: 'Apurv Ajay Kumar',
+      description: 'I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website.',
+      images: ['/images/logo.jpg'],
+    },
+  };
+  
+
+
 const Home: NextPage = () => {
     return (
         <>
-            <Head>
-                <title>Apurv Ajay Kumar</title>
-                <meta name="title" content="Apurv Ajay Kumar" />
-                <meta name="description" content="I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website." />
-
-
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.a2krocks.com/" />
-                <meta property="og:title" content="Apurv Ajay Kumar" />
-                <meta property="og:description" content="I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website." />
-                <meta property="og:image" content="/images/logo.jpg" />
-
-
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://www.a2krocks.com/" />
-                <meta property="twitter:title" content="Apurv Ajay Kumar" />
-                <meta property="twitter:description" content="I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website." />
-                <meta property="twitter:image" content="/images/logo.jpg" />
-            </Head>
             <main>
                 <Container maxWidth="xl">
                     <Typography className={styles.headings}>

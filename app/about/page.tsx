@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { Metadata, NextPage } from 'next'
 import Head from 'next/head'
 
 import { Typography, Grid, Box, Container, Divider, List, ListItem } from '@mui/material'
@@ -10,6 +10,31 @@ import ResponsiveAppBar from '../../components/ResponsiveAppBar';
 import FooterV2 from '../../components/v2/FooterV2';
 
 
+// layout.js or page.js
+
+export const metadata: Metadata = {
+    title: 'About Apurv Ajay Kumar',
+    description: 'I am Apurv, a student at Haldia Institute of Technology pursuing a B.Tech in IT',
+    openGraph: {
+      type: 'website',
+      url: 'https://www.a2krocks.com/about',
+      title: 'About Apurv Ajay Kumar',
+      description: 'I am Apurv, a student at Haldia Institute of Technology pursuing a B.Tech in IT',
+      images: [
+        {
+          url: '/images/logo.jpg', // Corrected the path from "/imagees/logo.jpg" to "/images/logo.jpg"
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: "https://www.a2krocks.com/about",
+      title: 'About Apurv Ajay Kumar',
+      description: 'I am Apurv, a student at Haldia Institute of Technology pursuing a B.Tech in IT',
+      images: ['/images/logo.jpg'], // Corrected the path from "/imagees/logo.jpg" to "/images/logo.jpg"
+    },
+  };
+  
 
 
 const About: NextPage = () => {
@@ -26,24 +51,6 @@ const About: NextPage = () => {
 
     return (
         <div>
-            <Head>
-                <title>About Apurv Ajay Kumar</title>
-                <meta name="title" content="About Apurv Ajay Kumar" />
-                <meta name="description" content="I am Apurv, a student at Haldia Institute of Technology pursing a B.Tech in IT" />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.a2krocks.com/about" />
-                <meta property="og:title" content="About Apurv Ajay Kumar" />
-                <meta property="og:description" content="I am Apurv, a student at Haldia Institute of Technology pursing a B.Tech in IT" />
-                <meta property="og:image" content="/imagees/logo.jpg" />
-
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://www.a2krocks.com/about" />
-                <meta property="twitter:title" content="About Apurv Ajay Kumar" />
-                <meta property="twitter:description" content="I am Apurv, a student at Haldia Institute of Technology pursing a B.Tech in IT" />
-                <meta property="twitter:image" content="/imagees/logo.jpg" />
-
-            </Head>
             <main>
                 <Container maxWidth="xl">
                     <Typography variant='subtitle2' component="h6" sx={{ pt: 2, pb: 1 }} >
