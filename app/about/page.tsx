@@ -4,10 +4,10 @@ import Head from 'next/head'
 import { Typography, Grid, Box, Container, Divider, List, ListItem } from '@mui/material'
 import { School, Work, Code, BuildOutlined, Build } from '@mui/icons-material'
 
-import SocialMediaUrls from '../Info/SocialMediaUrls'
+import SocialMediaUrls from '../../Info/SocialMediaUrls'
 
-import ResponsiveAppBar from '../components/ResponsiveAppBar';
-import FooterV2 from '../components/v2/FooterV2';
+import ResponsiveAppBar from '../../components/ResponsiveAppBar';
+import FooterV2 from '../../components/v2/FooterV2';
 
 
 
@@ -44,7 +44,6 @@ const About: NextPage = () => {
                 <meta property="twitter:image" content="/imagees/logo.jpg" />
 
             </Head>
-            <ResponsiveAppBar />
             <main>
                 <Container maxWidth="xl">
                     <Typography variant='subtitle2' component="h6" sx={{ pt: 2, pb: 1 }} >
@@ -285,7 +284,6 @@ const About: NextPage = () => {
                     </Grid>
                 </Container>
             </main>
-            <FooterV2 />
         </div>
     )
 }

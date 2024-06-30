@@ -1,7 +1,9 @@
+"use client";
+
 import { Box, Container, Divider, ImageList, ImageListItem, Typography } from "@mui/material";
 import { NextPage } from "next";
-import ResponsiveAppBar from "../components/ResponsiveAppBar";
-import FooterV2 from "../components/v2/FooterV2";
+import ResponsiveAppBar from "../../components/ResponsiveAppBar";
+import FooterV2 from "../../components/v2/FooterV2";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Head from "next/head";
 
@@ -44,7 +46,6 @@ const RenderPage: NextPage = () => {
                 <meta property="twitter:description" content="List of all the 3D render artworks done by Apurv Ajay Kumar" />
                 <meta property="twitter:image" content={imageUrl} />
             </Head>
-            <ResponsiveAppBar />
             <Container maxWidth="xl">
                 <Typography variant='h3' fontWeight="lighter" component="h1" sx={{ pt: 2, pb: 0 }} >
                     My 3D Artwork
@@ -66,7 +67,6 @@ const RenderPage: NextPage = () => {
                     ))}
                 </ImageList>
             </Container>
-            <FooterV2 />
         </>
     )
 }

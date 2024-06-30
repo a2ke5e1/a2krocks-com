@@ -14,9 +14,9 @@ import {
 } from '@mui/material'
 import Iframe from 'react-iframe'
 import Image from 'next/image'
-import styles from '../../styles/projects/0.module.css'
-import ResponsiveAppBar from '../../components/ResponsiveAppBar';
-import FooterV2 from '../../components/v2/FooterV2';
+import styles from '../../../styles/projects/0.module.css'
+import ResponsiveAppBar from '../../../components/ResponsiveAppBar';
+import FooterV2 from '../../../components/v2/FooterV2';
 import Head from 'next/head'
 
 const Project2: NextPage = () => {
@@ -48,7 +48,6 @@ const Project2: NextPage = () => {
                 <meta property="twitter:description" content="A tool for communities to ensure that everyone has access to necessary medicine" />
                 <meta property="twitter:image" content="/images/project2/cover.png" />
             </Head>
-            <ResponsiveAppBar />
             <Container>
                 <Typography sx={{ mt: 3 }} variant="h1" component="h2" align="center" className="cover-title"
                     fontWeight="500">
@@ -232,7 +231,6 @@ const Project2: NextPage = () => {
 
 
             </Container>
-            <FooterV2 />
         </>
     );
 }

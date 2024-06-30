@@ -2,48 +2,45 @@ import type { NextPage } from 'next'
 import { Container, Typography, Card, CardActions, CardContent, Button, Grid, Box, CardActionArea, CardMedia, Paper } from '@mui/material'
 import Iframe from 'react-iframe'
 import Image from 'next/image'
-import styles from '../../styles/projects/0.module.css'
-import ResponsiveAppBar from '../../components/ResponsiveAppBar';
-import FooterV2 from '../../components/v2/FooterV2';
+import styles from '../../../styles/projects/0.module.css'
+import ResponsiveAppBar from '../../../components/ResponsiveAppBar'
+import FooterV2 from '../../../components/v2/FooterV2';
 import Head from 'next/head'
 
-
-const Project1: NextPage = () => {
-
+const Project0: NextPage = () => {
     const cardWidth = 360
     const cardHeight = 110
-    const cover = '/images/project1/cover.png'
-    const paperWireframe = '/images/project1/paper_wireframe.png'
-    const l1 = '/images/project1/wireframe/1.png'
-    const l2 = '/images/project1/wireframe/2.png'
-    const l3 = '/images/project1/wireframe/3.png'
+    const cover = '/images/project0/cover.png'
+    const paperWireframe = '/images/project0/paper_wfireframe.jpg'
+    const l1 = '/images/project0/wireframe/1.png'
+    const l2 = '/images/project0/wireframe/2.png'
+    const l3 = '/images/project0/wireframe/3.png'
 
     return (
         <>
             <Head>
-                <title>Logo - coding tutorials</title>
-                <meta name="title" content="Logo - coding tutorials" />
-                <meta name="description" content="A website for finding and viewing coding tutorials" />
+                <title>Foody - A food ordering App</title>
+                <meta name="title" content="Foody - A food ordering App" />
+                <meta name="description" content="A mobile food ordering app for a Restaurant." />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.a2krocks.com/projects/logo" />
-                <meta property="og:title" content="Logo - coding tutorials" />
-                <meta property="og:description" content="A website for finding and viewing coding tutorials" />
-                <meta property="og:image" content="/images/project1/cover.png" />
+                <meta property="og:url" content="https://www.a2krocks.com/projects/foody" />
+                <meta property="og:title" content="Foody - A food ordering App" />
+                <meta property="og:description" content="A mobile food ordering app for a Restaurant." />
+                <meta property="og:image" content="/images/project0/cover.png" />
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://www.a2krocks.com/projects/logo" />
-                <meta property="twitter:title" content="Logo - coding tutorials" />
-                <meta property="twitter:description" content="A website for finding and viewing coding tutorials" />
-                <meta property="twitter:image" content="/images/project1/cover.png" />
+                <meta property="twitter:url" content="https://www.a2krocks.com/projects/foody" />
+                <meta property="twitter:title" content="Foody - A food ordering App" />
+                <meta property="twitter:description" content="A mobile food ordering app for a Restaurant." />
+                <meta property="twitter:image" content="/images/project0/cover.png" />
             </Head>
-            <ResponsiveAppBar />
             <Container>
                 <Typography sx={{ mt: 3 }} variant="h1" component="h2" align="center" className="cover-title" fontWeight="500">
-                    LOGO
+                    Foody
                 </Typography>
                 <Typography sx={{ mt: 1, mb: 3 }} variant="h5" component="h2" align="center" className="cover-title" fontWeight="300">
-                    A website for finding and viewing coding tutorials
+                    A mobile food ordering app for a Restaurant.
                 </Typography>
                 <img src={cover} className={styles.cover_page} />
                 <Grid container
@@ -52,7 +49,7 @@ const Project1: NextPage = () => {
                     alignItems="center" spacing={2}
                 >
                     <Grid item  >
-                        <Card variant="outlined" className={styles.aryclic} sx={{ width: cardWidth, height: cardHeight, borderColor: '#dae2ef', borderRadius: 3 }}>
+                        <Card variant="outlined" className={styles.aryclic} sx={{ width: cardWidth, height: cardHeight, borderRadius: 3 }}>
                             <CardActionArea >
                                 {/* <CardMedia
                                 component="img"
@@ -72,7 +69,7 @@ const Project1: NextPage = () => {
                         </Card>
                     </Grid>
                     <Grid item  >
-                        <Card variant="outlined" className={styles.aryclic} sx={{ width: cardWidth, height: cardHeight, borderColor: '#dae2ef', borderRadius: 3 }}>
+                        <Card variant="outlined" className={styles.aryclic} sx={{ width: cardWidth, height: cardHeight, borderRadius: 3 }}>
                             <CardActionArea >
                                 {/* <CardMedia     
                                 component="img"
@@ -85,13 +82,14 @@ const Project1: NextPage = () => {
                                         Project Goal
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Goal of project to provide high quality tutorials and to have a discussion for better understanding.     </Typography>
+                                        Create a smooth experience between opening an app for first time to order their favourite food with any waste of time.
+                                    </Typography>
                                 </CardContent>
                             </CardActionArea>
                         </Card>
                     </Grid>
                     <Grid item  >
-                        <Card variant="outlined" className={styles.aryclic} sx={{ width: cardWidth, height: cardHeight, borderColor: '#dae2ef', borderRadius: 3 }}>
+                        <Card variant="outlined" className={styles.aryclic} sx={{ width: cardWidth, height: cardHeight, borderRadius: 3 }}>
                             <CardActionArea >
                                 {/* <CardMedia
                                 component="img"
@@ -115,8 +113,8 @@ const Project1: NextPage = () => {
                 <Typography sx={{ mt: 3, mb: 3 }} variant="h4" fontWeight="700"  >
                     Key challenges and Constraints
                 </Typography>
-                <Typography variant="h6" fontWeight="400" align="justify" color="text.secondary" maxWidth="320px" >
-                    Key challenges were to provide a respomsive design to mobile and web to find coding tutorials. <br /><br /> This projects aim to solve difficulty faced  during learning programing.
+                <Typography variant="h6" fontWeight="400" align="justify" color="text.secondary" maxWidth="300px" >
+                    Key Challenge were to provide a good user expercince for next billion users.
                 </Typography>
                 <Typography sx={{ mt: 3 }} variant="h4" fontWeight="700" >
                     Initial design concepts
@@ -155,63 +153,90 @@ const Project1: NextPage = () => {
                 >
                     <Grid item>
                         <Paper elevation={2} sx={{ borderRadius: 6 }} >
-                            <img width="350px" className={styles.image_wireframe} src={l1} />
+                            <img className={styles.image_wireframe} width="350px" src={l1} />
                         </Paper>
                     </Grid>
                     <Grid item >
                         <Paper elevation={2} sx={{ borderRadius: 6 }} >
-                            <img width="350px" className={styles.image_wireframe} src={l2} />
+                            <img className={styles.image_wireframe} width="350px" src={l2} />
                         </Paper>
                     </Grid>
                     <Grid item >
                         <Paper elevation={2} sx={{ borderRadius: 6 }} >
-                            <img width="350px" className={styles.image_wireframe} src={l3} />
+                            <img className={styles.image_wireframe} width="350px" src={l3} />
                         </Paper>
                     </Grid>
                 </Grid>
                 <Typography sx={{ mt: 3 }} variant="h4" fontWeight="700" >
                     User testing Results
                 </Typography>
-                <Typography sx={{ mt: 3, mb: 3 }} variant="h6" fontWeight="400" align="justify" color="text.secondary" maxWidth="320px">
-                    After User Testing, We found that people wanted a way to copy code from video. So We added to side bar to copy code presented in video.
 
+                <Typography sx={{ mt: 3, ml: 3 }} variant="h6" fontWeight="300" >
+                    Round 1
                 </Typography>
-
+                <ul>
+                    <li>
+                        <Typography variant="h6" fontWeight="400" >
+                            3 out 5 participants found it difficult to find their orders from home screen.
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography variant="h6" fontWeight="400" >
+                            4 out 5 participants found it difficult to fill their address.
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography variant="h6" fontWeight="400" >
+                            4 out 5 participants opened cart screen instead of selecting their food.
+                        </Typography>
+                    </li>
+                </ul>
+                <Typography sx={{ mt: 3, ml: 3 }} variant="h6" fontWeight="300" >
+                    Round 2
+                </Typography>
+                <ul>
+                    <li>
+                        <Typography variant="h6" fontWeight="400" >
+                            5 out 5 participants want to filter food recommendation based on type such as western, veg , etc
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography variant="h6" fontWeight="400" >
+                            4 out 5 participants wanted to choose size of the food.
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography variant="h6" fontWeight="400" >
+                            4 out 5 people wanted to have option to choose from multiple address
+                        </Typography>
+                    </li>
+                </ul>
                 <Typography sx={{ mt: 3 }} variant="h4" fontWeight="700" >
-                    High-fidelity prototypes
+                    Mockups
                 </Typography>
 
-                <Typography sx={{ mt: 3, ml: 3 }} variant="h6" fontWeight="300" >
-                    Web
-                </Typography>
-                <Iframe className={styles.iframe_margin} url="https://xd.adobe.com/embed/dc775c83-f017-4bc9-b330-ea90572f5820-8924/"
+
+                <Iframe className={styles.iframe_margin} url="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWJ0W8g4n5uRZyh19wLX5xh%2FFoody%3Fnode-id%3D301%253A817"
                     width="100%"
                     height="800px"
                     allowFullScreen
                 />
-
-                <Typography sx={{ mt: 3, ml: 3 }} variant="h6" fontWeight="300" >
-                    Mobile
-                </Typography>
-                <Iframe className={styles.iframe_margin} url="https://xd.adobe.com/embed/476470df-3c3b-4f26-9ab0-bdfd79775582-1237/"
+                <Iframe className={styles.iframe_margin} url="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWJ0W8g4n5uRZyh19wLX5xh%2FFoody%3Fnode-id%3D307%253A498%26scaling%3Dscale-down%26page-id%3D301%253A817%26starting-point-node-id%3D307%253A498%26show-proto-sidebar%3D1"
                     width="100%"
                     height="800px"
                     allowFullScreen
                 />
-
                 <Typography sx={{ mt: 3 }} variant="h4" fontWeight="700" >
                     Takeways
                 </Typography>
                 <Typography sx={{ mt: 3, mb: 3 }} variant="body1" fontWeight="500" color="text.secondary">
-                    While working on this project i have learned various skills and importance of accessibility. Usability studies and peers feedback was one of the most important   inflactal in each iteration of the app’s look and feel.<br /> <br />
-                    While doing this project I have increase my knowledge and experience on using Adobe XD to create prototypes for my upcoming project. I also learned to create responsive web design.
+                    While working on this project i have learned various skills and importance of accessibility. Usability studies and peers feedback was one of the most important   inflactal in each iteration of the app’s look and feel.
                 </Typography>
 
 
             </Container>
-            <FooterV2 />
         </>
-    );
+    )
 }
 
-export default Project1
+export default Project0

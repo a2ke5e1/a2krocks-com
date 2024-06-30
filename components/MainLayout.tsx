@@ -1,13 +1,14 @@
+"use client";
+
 import React, { Component } from 'react'
-import Head from 'next/head'
-import Footer from '../components/footer'
-import ResponsiveAppBar from '../components/ResponsiveAppBar'
 
 // Theme stuff
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import FooterV2 from "./v2/FooterV2";
+import ResponsiveAppBar from './ResponsiveAppBar';
+import Footer from './footer';
+import FooterV2 from './v2/FooterV2';
 
 
 export default function MainLayout({ children }: any) {
@@ -25,7 +26,9 @@ export default function MainLayout({ children }: any) {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
+            <ResponsiveAppBar />
             {children}
+            <FooterV2 />
         </ThemeProvider>
     );
 }

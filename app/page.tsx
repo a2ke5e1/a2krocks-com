@@ -31,7 +31,6 @@ const Home: NextPage = () => {
                 <meta property="twitter:description" content="I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website." />
                 <meta property="twitter:image" content="/images/logo.jpg" />
             </Head>
-            <ResponsiveAppBar />
             <main>
                 <Container maxWidth="xl">
                     <Typography className={styles.headings}>
@@ -101,7 +100,6 @@ const Home: NextPage = () => {
                     </Grid>
                 </Container>
             </main>
-            <FooterV2 />
         </>
 
     )

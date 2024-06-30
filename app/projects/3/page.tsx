@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import {Card, CardActionArea, CardContent, Container, Grid, Typography} from "@mui/material"
 import styles from "../../styles/projects/0.module.css";
 
-import projectInfo from "../../Info/project_info/project3.json"
+import projectInfo from "../../../Info/project_info/project3.json"
 
 
 const ProjectYearlyProgress : NextPage = () => {
