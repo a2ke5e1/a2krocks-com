@@ -1,5 +1,5 @@
 import {Box, IconButton} from "@mui/material";
-import {FacebookOutlined, GitHub, Instagram, LinkedIn, Twitter, YouTube} from "@mui/icons-material";
+import {GitHub, Instagram, LinkedIn, X, YouTube} from "@mui/icons-material";
 import SocialMediaUrls from "../../Info/SocialMediaUrls";
 
 const smUrls = new SocialMediaUrls();
@@ -15,7 +15,7 @@ const socialMedia = (
             <LinkedIn/>
         </IconButton>
         <IconButton color="inherit" href={smUrls.twitter} aria-label="Twitter">
-            <Twitter/>
+            <X />
         </IconButton>
         <IconButton color="inherit" href={smUrls.instagram} aria-label="Instagram">
             <Instagram/>
