@@ -48,7 +48,7 @@ const ResponsiveAppBar = () => {
                         >
                             <Image className={styles.rounded_logo} src="/images/logo.jpg" alt="a2krocks' logo"
                                    width={30} height={30}/>
-                            <Box sx={{pl: 1}}>a2krocks</Box>
+                            <Box sx={{pl: 1}}>a2ke5e1</Box>
                         </Typography>
 
                         <Box sx={{flexGrow: 1, display: {xs: 'flex', md: 'none'}}}>
@@ -100,7 +100,7 @@ const ResponsiveAppBar = () => {
                         >
                             <Image className={styles.rounded_logo} src="/images/logo.jpg" alt="a2kroks' logo" width={30}
                                    height={30}/>
-                            <Box sx={{pl: 1}}>a2krocks</Box>
+                            <Box sx={{pl: 1}}>a2ke5e1</Box>
                         </Typography>
                         <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                             {

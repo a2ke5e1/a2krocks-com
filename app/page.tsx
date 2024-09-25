@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: 'I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website.',
     openGraph: {
       type: 'website',
-      url: 'https://www.a2krocks.com/',
+      url: 'https://www.a2ke5e1.com/',
       title: 'Apurv Ajay Kumar',
       description: 'I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website.',
       images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     },
     twitter: {
       card: 'summary_large_image',
-      site: 'https://www.a2krocks.com/',
+      site: 'https://www.a2ke5e1.com/',
       title: 'Apurv Ajay Kumar',
       description: 'I am a student currently pursuing a B.Tech in Information Technology. This is my portfolio website.',
       images: ['/images/logo.jpg'],
